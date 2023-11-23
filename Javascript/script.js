@@ -1,4 +1,4 @@
-let productosHTML = document.getElementById("sectionPlatos");
+let productosHTML = document.getElementById("sectionSubs");
 
 let carrito = [];
 
@@ -92,7 +92,7 @@ const filtrado = () => {
             <h4>$${item.Precio}</h4>
             <button id="boton${item.id}"><i class="fas fa-shopping-cart"></i></button>
         `
-        sectionPlatos.append(div);
+        sectionSubs.append(div);
         
         let boton = document.getElementById(`boton${item.id}`);
 
@@ -119,9 +119,10 @@ let boton1 = document.getElementById("Aplicaciones");
 let boton2 = document.getElementById("Streaming");
 let boton3 = document.getElementById("Gimnasios");
 let boton4 = document.getElementById("Viajes");
+let boton5 = document.getElementById("Todos");
 let botonCarrito = document.getElementById("Carrito")
 
-const Hola = async (categ) => {
+const Mostrar = async (categ) => {
     try {
         const response = await fetch("./data.json")
         const data = await response.json();
@@ -129,7 +130,7 @@ const Hola = async (categ) => {
         let filtro = categ;
         let filtrados = data.filter( item => item.Categoria == filtro); //el status es una appServcio justo de esa api
         
-        sectionPlatos.innerHTML = "";
+        sectionSubs.innerHTML = "";
 
         filtrados.forEach(item =>{
                 let div = document.createElement("div");
@@ -144,7 +145,7 @@ const Hola = async (categ) => {
                     <h4>$${item.Precio}</h4>
                     <button id="boton${item.id}"><i class="fas fa-shopping-cart"></i></button>
                 `
-                sectionPlatos.append(div);
+                sectionSubs.append(div);
                 
                 let boton = document.getElementById(`boton${item.id}`);
         
@@ -171,10 +172,11 @@ const Hola = async (categ) => {
 
 };
 
-boton1.addEventListener("click", () => Hola(1));
-boton2.addEventListener("click", () => Hola(2));
-boton3.addEventListener("click", () => Hola(3));
-boton4.addEventListener("click", () => Hola(4));
+boton1.addEventListener("click", () => Mostrar(1));
+boton2.addEventListener("click", () => Mostrar(2));
+boton3.addEventListener("click", () => Mostrar(3));
+boton4.addEventListener("click", () => Mostrar(4));
+boton5.addEventListener("click",() => location.reload());
 
 botonCarrito.addEventListener("click", () => {
     carrito = JSON.parse(localStorage.getItem("Carrito"))

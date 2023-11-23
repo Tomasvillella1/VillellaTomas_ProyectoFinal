@@ -2,7 +2,7 @@
 body{
 /* background-color: #aac2fb; */
 font-family: 'Kanit', sans-serif;
-color: #050505;
+color: #00524c;
 }
 
 /*HEADER*/
@@ -13,7 +13,7 @@ header div h1{
     text-align: center;  
     font-size: 2.5rem; 
     margin: auto;
-    color: #000000;
+    color: #00524c;
     text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
     
 }
@@ -26,8 +26,13 @@ header div h6{
 
 .header1{
     margin: 6rem 0;
+    
 }
 
+#formulario{
+    display: flex;
+    position: middle
+}
 .iconos{
     margin: 1.2rem 1.2rem 0 0; 
     display: flex; 
@@ -101,6 +106,7 @@ main .sectionPrincipal section{
     text-align: center;
     padding: 2rem;
     margin: 1rem;
+    border-radius: 1rem;
     font-size: 0.9rem;
     color: #dddcef;
     -webkit-box-shadow: 9px 9px 15px -5px rgba(8,8,8,0.62); 
@@ -110,24 +116,25 @@ main .sectionPrincipal section{
 
 
 .productos h2{
-    background-color: #ffffff;
+    background-color: #000000;
     color: white;
     width: fit-content;
     margin: 1px auto;
+    border-radius: 2px;
     font-weight: 900;
-    color: black;
-    opacity: 0.7;
+    color: rgb(255, 255, 255);
+    opacity: 0,8;
   
       
 }
 .productos h4{
-    background-color: #f7f7fc;
+    background-color: #000000;
     color: white;
     width: fit-content;
     margin: 1px auto;
     font-weight: 900;
-    color: black;
-    opacity: 0.7;
+    color: rgb(255, 255, 255);
+    opacity: 1;
     margin: 1rem auto;
     font-size: 1rem;
   
@@ -137,12 +144,12 @@ main .sectionPrincipal section{
 
 .productos button{
     padding: 0.4rem 1rem ;
-    background-color: #dddcef;
+    background-color: #000000;
     border-radius: 8px 8px 8px 8px;
     -webkit-border-radius: 8px 8px 8px 8px;
     -moz-border-radius: 8px 8px 8px 8px;
-    border: 2px solid #d6d5f3;
-    color: rgb(2, 22, 22);
+    border: 2px solid #9b00b0;
+    color: rgb(255, 255, 255);
     cursor: pointer;
     
 }
