@@ -1,0 +1,325 @@
+
+body{
+/* background-color: #aac2fb; */
+font-family: 'Kanit', sans-serif;
+color: #050505;
+}
+
+/*HEADER*/
+
+
+
+header div h1{
+    text-align: center;  
+    font-size: 2.5rem; 
+    margin: auto;
+    color: #000000;
+    text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+    
+}
+header div h6{
+    text-align: center;  
+    font-size: 1.3rem; 
+    margin: auto;
+
+}
+
+.header1{
+    margin: 6rem 0;
+}
+
+.iconos{
+    margin: 1.2rem 1.2rem 0 0; 
+    display: flex; 
+}
+.iconos a{
+    color: #00524c;
+    padding-right: 0.7rem;
+}
+
+.fechaIconos{
+    display: flex;
+    justify-content: space-between;
+}
+.fecha2{
+    margin-left: 1rem;
+}
+
+/*NAV*/
+nav{
+    background-color: #f0f0f2;
+  
+ 
+}
+nav .navPrincipal{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+}
+nav .navPrincipal li{
+    padding: 1rem;
+    color: rgb(54, 79, 88);
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+nav .navPrincipal li button{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+nav .navPrincipal li button:hover{
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+}
+
+.botonesNav{
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/*MAIN*/
+
+
+main .sectionPrincipal div h3{
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: 3rem;
+   
+}
+main .sectionPrincipal section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.productos{
+    width: 25rem;
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem;
+    font-size: 0.9rem;
+    color: #dddcef;
+    -webkit-box-shadow: 9px 9px 15px -5px rgba(8,8,8,0.62); 
+    box-shadow: 9px 9px 15px -5px rgba(8,8,8,0.62);
+      
+}
+
+
+.productos h2{
+    background-color: #ffffff;
+    color: white;
+    width: fit-content;
+    margin: 1px auto;
+    font-weight: 900;
+    color: black;
+    opacity: 0.7;
+  
+      
+}
+.productos h4{
+    background-color: #f7f7fc;
+    color: white;
+    width: fit-content;
+    margin: 1px auto;
+    font-weight: 900;
+    color: black;
+    opacity: 0.7;
+    margin: 1rem auto;
+    font-size: 1rem;
+  
+      
+}
+
+
+.productos button{
+    padding: 0.4rem 1rem ;
+    background-color: #dddcef;
+    border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    border: 2px solid #d6d5f3;
+    color: rgb(2, 22, 22);
+    cursor: pointer;
+    
+}
+.productos div img{
+    width: 25rem;
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem;
+    font-size: 0.9rem;
+    border-radius: 14px 14px 14px 14px;
+    -webkit-border-radius: 14px 14px 14px 14px;
+    -moz-border-radius: 14px 14px 14px 14px;
+    border: 6px solid #d6d5f3;
+    
+    
+}
+
+/*FOOTER*/
+footer{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f2;
+}
+footer h4{
+    padding: 1rem;
+    font-size: 1rem;
+
+}
+
+/*CARRITO*/
+
+.botonCerrar{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    text-align: right;
+
+}
+.botonC{
+    text-align: left;
+}
+.MenuLateral{
+    background-color: #ffffffe8;
+    padding: 0.8rem
+};
+
+
+.carritoCont{
+    padding: 1rem;
+}
+.carritoCont div{
+    margin: 2rem 0;
+}
+
+.carritoTitulo{
+    text-align: center;
+    color: #000000;
+    text-shadow: 2px 2px 0 #bcbcbc, 2px 3px 0 #9c9c9c;
+}
+.productosCarrito{
+    width: auto;
+    text-align: center;
+    border: dotted rgb(96, 156, 23);
+    padding: 0.7rem;
+    font-size: 0.7rem;
+    border-radius: 14px 14px 14px 14px;
+    -webkit-border-radius: 14px 14px 14px 14px;
+    -moz-border-radius: 14px 14px 14px 14px;
+    border: 4px solid #d6d5f3;
+    margin: 1rem;
+    -webkit-box-shadow: 9px 9px 15px -5px rgba(8,8,8,0.62); 
+    box-shadow: 9px 9px 15px -5px rgba(8,8,8,0.62);
+    color: #dddcef;
+}
+
+.productosCarrito button{
+    padding: 0.4rem 1rem ;
+    background-color: #dddcef;
+    border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    border: 2px solid #d6d5f3;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.productosCarrito h2{
+    background-color: #ffffff;
+    color: white;
+    width: fit-content;
+    margin: 1px auto;
+    font-weight: 900;
+    color: black;
+    opacity: 0.7;
+  
+      
+}
+.productosCarrito h4{
+    background-color: #f7f7fc;
+    color: white;
+    width: fit-content;
+    margin: 1px auto;
+    font-weight: 900;
+    color: black;
+    opacity: 0.7;
+    margin: 1rem auto;
+    font-size: 1rem;
+  
+      
+}
+
+
+.productosCarrito button{
+    padding: 0.4rem 1rem ;
+    background-color: #dddcef;
+    border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    border: 2px solid #d6d5f3;
+    cursor: pointer;
+    
+}
+.botonRemC{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.botonRemC button{
+    padding: 0.6rem 0,8rem ;
+    background-color: #cccbe2;
+    border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    border: 2px solid #d6d5f3;
+    color: rgb(0, 8, 8);
+    font-weight: 900;
+    font-size: 0.8rem;
+    cursor: pointer;
+    margin: 0.3rem;
+}
+
+
+.totalPagar{
+    text-align: center;
+    
+}
+
+.totales h3{
+    margin: 4rem 0 0 0;
+    text-align: center;
+}
+.totales p{
+    margin: 0;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-widht: 600px){}
+
+@media screen and (min-width: 600px){
+    nav .navPrincipal{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    footer h4{
+        font-size: 1.3rem;
+        padding: 1rem;
+        margin: 1rem 2rem;
+    }
+    .iconos a{
+        
+        padding-right: 2rem;
+    }
+    header div h1{  
+        font-size: 4rem; 
+        
+    }
+}
