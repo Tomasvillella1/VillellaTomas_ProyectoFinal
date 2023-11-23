@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Material+Icons' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=PT+Serif:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/pushbar.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>All My Subs</title>
+</head>
+<body>
+    <header>
+        <div class="fechaIconos">
+            <div id="fecha" class="fecha2"></div>
+            <div class="iconos">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram fa-2x " aria-hidden="true"></i></a>
+                <a href="https://web.whatsapp.com/" target="_blank"> <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="header1">
+            <h1>AllMySubs</h1>
+            <h6>Todas tus plataformas en un mismo lugar</h6>
+        </div>
+    </header>
+    <nav>
+        <ul class="navPrincipal">
+            <li>
+                <button id="Aplicaciones" class="botonesNav">Aplicaciones</button>
+            </li>
+            <li>
+                <button id="Streaming" class="botonesNav">Streaming</button> 
+            </li>
+            <li>
+                <button id="Gimnasios" class="botonesNav">Gimnasios</button>
+            </li>
+            <li>
+                <button id="Viajes" class="botonesNav">Viajes</button>
+            </li>
+            <li>
+                <button id="Carrito" class="botonesNav pushbar_main_content" data-pushbar-target="mypushbar1"><i class="material-icons">shopping_cart</i></button>
+            </li>
+        </ul>
+    </nav>
+
+    <img src="" alt="">
+    
+    <div data-pushbar-id="mypushbar1" data-pushbar-direction="right" class="MenuLateral">
+        <div class="botonC">
+            <button data-pushbar-close class="botonCerrar"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="carritoCont">
+            <div>
+                <h2 class="carritoTitulo">Carrito</h2>
+            </div>
+            <div id="carritoBarra">
+    
+            </div>
+
+            <div class="totales">
+                <h3>El total a pagar es: $</h3>
+                <p id="precio" type="number"></p>
+            </div>
+            <div class="botonRemC">
+                <button id="BotonRemC">Remover Todo</button>
+                <button id="BotonComprar">Comprar Carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="sectionPrincipal">
+            <div class="barraTit">
+                <h3>Elegi tus plafaormas y servicios preferidos!</h3>
+            </div>
+            <section id="sectionPlatos">
+            
+            </section>
+            
+        </section>
+    </main>
+    
+    <footer>
+        <h4>All My Subs</h4>
+        <h4>Bases y Condiciones</h4>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/luxon@2.3.0/build/global/luxon.min.js"></script>
+<script src="https://kit.fontawesome.com/2c7ef9c20a.js" crossorigin="anonymous"></script>
+<script src="./Javascript/pushbar.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./Javascript/script.js"></script>
+</body>
+</html>
