@@ -20,15 +20,7 @@ const encontradoItem = () =>{
       })
 }
 
-/*const borrarCarrito = () =>{
-    Swal.fire({
-    position: 'top-end',
-    icon: 'success',
-    title: 'Se ha vaciado el carrito',
-    showConfirmButton: true,
-    timer: 4000
-    })
-}*/
+
 const borrarCarrito = () =>{
     Swal.fire({
         title: 'Desea Vaciar todo el carrito?',
@@ -176,7 +168,8 @@ boton1.addEventListener("click", () => Mostrar(1));
 boton2.addEventListener("click", () => Mostrar(2));
 boton3.addEventListener("click", () => Mostrar(3));
 boton4.addEventListener("click", () => Mostrar(4));
-boton5.addEventListener("click",() => location.reload());
+boton5.addEventListener("click",() => location.reload()); 
+
 
 botonCarrito.addEventListener("click", () => {
     carrito = JSON.parse(localStorage.getItem("Carrito"))

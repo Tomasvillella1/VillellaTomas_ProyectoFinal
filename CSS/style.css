@@ -2,10 +2,12 @@
 body{
 /* background-color: #aac2fb; */
 font-family: 'Kanit', sans-serif;
-color: #00524c;
+color: #050505;
 }
 
 /*HEADER*/
+
+
 
 header div h1{
     text-align: center;  
@@ -69,11 +71,13 @@ nav .navPrincipal li{
 }
 nav .navPrincipal li button{
     font-size: 1.2rem;
+    color:#00524c
     font-weight: 600;
 }
 nav .navPrincipal li button:hover{
-    color: rgb(255, 255, 255);
+    color: #00524c;
     font-size: 1.2rem;
+    
 }
 
 .botonesNav{
