@@ -30,6 +30,9 @@ const borrarCarrito = () =>{
       }).then((result) => {
         if (result.isConfirmed) {
           Swal.fire('Su carrito ha sido vaciado', '', 'success')
+          setTimeout(() => {
+            location.reload();
+          }, 2000);
         } else if (result.isDenied) {
           
         }
@@ -184,7 +187,7 @@ botonCarrito.addEventListener("click", () => {
         div.style.opacity = "0.9";
         div.id = `${item.id}`;
         div.innerHTML = `
-            <h2>${item.Nombre}</h2>
+            <h2>${item.Nombre}</h2>SS
             <h4>$${item.Precio}</h4>
             <button id="boton${item.id}">Remover</button>`
         carritoBarra.append(div);
@@ -221,7 +224,6 @@ const pushbar = new Pushbar({
   botonRemC.addEventListener("click", () => {
       localStorage.clear();
       borrarCarrito();
-      //location.reload();// para que se recargue sola la pagina
     
   });
 
